@@ -14,8 +14,22 @@ body {
   justify-content: center;
   align-items: center;
 }
+body.black_mode{
+  background: #111;
+}
 .switcher_mode{
-  
+  padding: 0 0;
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+.switcher_mode.black_mode{
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+.switcher_mode_img{
+  width: 100%;
+  height: 100%;
 }
 .container{
   width: 100%;
